@@ -1498,3 +1498,21 @@ section
 	font-size: 12px;
 	color: #232323;
 }
+
+
+
+
+
+#contentcombo
+{
+	background-color: lightblue;
+	color:black;
+	width:200px;
+	text-align:center;
+
+}
+
+#showcombo{
+	display:none;
+}
+

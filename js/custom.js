@@ -17,6 +17,30 @@
 
 $(document).ready(function()
 {
+
+$('#hidecombo').click(function()
+{
+	$('#contentcombo').hide('blind');
+	$('#hidecombo').hide();
+	$('#showcombo').show();
+});
+
+$('#showcombo').click(function()
+{
+	$('#contentcombo').show('blind');
+	$('#showcombo').hide();
+	$('#hidecombo').show();
+});
+
+//aldstuff
+
+$('.carousel').carousel();
+
+	$('#myCarousel').on('slide.bs.carousel', function () {
+  // do something…
+});
+
+
 	"use strict";
 
 	/* 
@@ -31,6 +55,12 @@ $(document).ready(function()
 	var burger = $('.burger_container');
 
 	setHeader();
+
+
+
+
+
+
 
 	$(window).on('resize', function()
 	{
