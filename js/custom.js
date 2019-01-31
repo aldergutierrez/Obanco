@@ -32,6 +32,9 @@ $('#showcombo').click(function()
 	$('#hidecombo').show();
 });
 
+$('#botontoggle').on('click', function(){
+	$('#empezar').toggle();
+});
 //aldstuff
 
 $('.carousel').carousel();
