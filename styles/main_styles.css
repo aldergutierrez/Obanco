@@ -1536,6 +1536,10 @@ section
 	color: #1b9de8;
 }
 
+.card-header{
+	background-color: white;
+}
+
 /* TUTORIAL */
 .chromeframe {
     margin: 0.2em 0;
