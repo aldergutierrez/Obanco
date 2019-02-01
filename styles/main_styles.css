@@ -49,7 +49,16 @@
 	src: url('../fonts/beyond_the_mountains.otf')  format('opentype'),
 		 url('../fonts/beyond_the_mountains.ttf')  format('truetype');
 }
-
+@font-face
+{
+	font-family: 'himBold';
+	src: url('../fonts/hinted-Geomanist-Bold.ttf')  format('truetype');
+}
+@font-face
+{
+	font-family: 'him';
+	src: url('../fonts/hinted-Geomanist-Regular.ttf')  format('truetype');
+}
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -64,10 +73,10 @@
 }
 body
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'him';
 	font-size: 14px;
 	font-weight: 400;
-	background: #FFFFFF;
+	background: #1b9de8;
 	color: #2f2f2f;
 }
 div
@@ -85,7 +94,7 @@ ul
 }
 p
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'him';
 	font-size: 14px;
 	line-height: 2;
 	font-weight: 400;
@@ -142,7 +151,7 @@ h4{font-size: 18px;}
 h5{font-size: 14px;}
 h1, h2, h3, h4, h5, h6
 {
-	font-family: 'Open Sans', sans-serif;
+	font-family: 'him';
 	-webkit-font-smoothing: antialiased;
 	-webkit-text-shadow: rgba(0,0,0,.01) 0 0 1px;
 	text-shadow: rgba(0,0,0,.01) 0 0 1px;
@@ -258,10 +267,10 @@ section
 }
 .section_title
 {
-	font-family: 'Lucida', serif;
+	font-family: 'himBold', serif;
 	font-size: 60px;
 	text-transform: uppercase;
-	color: #2f2f2f;
+	color: #1b9de8;
 	margin-top: -4px;
 }
 .button
@@ -336,9 +345,9 @@ section
 
 .logo a
 {
-	font-family: 'Lucida', serif;
+	font-family: 'himBold', serif;
 	font-size: 30px;
-	color: #2f2f2f;
+	color: #1b9de8;
 }
 
 /*********************************
@@ -367,7 +376,7 @@ section
 {
 	font-size: 12px;
 	text-transform: uppercase;
-	color: #2f2f2f;
+	color: #1b9de8;
 	font-weight: 600;
 	letter-spacing: 0.2em;
 	-webkit-transition: all 200ms ease;
@@ -378,7 +387,7 @@ section
 }
 .main_nav ul li a:hover
 {
-	color: #937c6f;
+	color: #0074c5;
 }
 
 /*********************************
@@ -582,7 +591,7 @@ section
 }
 .home_slider_title
 {
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 72px;
 	color: #FFFFFF;
 	height: 99px;
@@ -602,12 +611,12 @@ section
 	transform: translateX(-50%);
 	top: -37px;
 	height: 37px;
-	background: #2f2f2f;
+	background: #1b9de8;
 	color: #FFFFFF;
 	padding-left: 34px;
 	padding-right: 34px;
 	line-height: 37px;
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 18px;
 	white-space: nowrap;
 }
@@ -630,7 +639,7 @@ section
 }
 .home_slider_next:hover
 {
-	background: #2f2f2f;
+	background: #1b9de8;
 }
 .home_slider_dots_container
 {
@@ -655,7 +664,7 @@ section
 {
 	display: inline-block;
 	position: relative;
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 18px;
 	color: #FFFFFF;
 	margin-right: 7px;
@@ -765,9 +774,9 @@ section
 }
 .menu_nav ul li a
 {
-	font-size: 12px;
+	font-size: 18px;
 	text-transform: uppercase;
-	color: #2f2f2f;
+	color: #1b9de8;
 	font-weight: 600;
 	letter-spacing: 0.2em;
 	-webkit-transition: all 200ms ease;
@@ -778,7 +787,7 @@ section
 }
 .menu_nav ul li a:hover
 {
-	color: #937c6f;
+	color: #0074c5;
 }
 .menu .search
 {
@@ -825,7 +834,7 @@ section
 .promo_link a
 {
 	display: block;
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 18px;
 	color: #FFFFFF;
 	line-height: 60px;
@@ -877,7 +886,7 @@ section
 }
 .promo_title
 {
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 30px;
 	color: #FFFFFF;
 }
@@ -1088,7 +1097,7 @@ section
 }
 .extra_1_price
 {
-	font-family: 'Beyond', sans-serif;
+	font-family: 'himBold', sans-serif;
 	font-size: 72px;
 	color: #FFFFFF;
 	line-height: 0.75;
@@ -1099,7 +1108,7 @@ section
 }
 .extra_1_title
 {
-	font-family: 'Lucida', serif;
+	font-family: 'himBold', serif;
 	font-size: 30px;
 	color: #937c6f;
 	margin-top: 39px;
@@ -1136,7 +1145,7 @@ section
 }
 .extra_2_center
 {
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 200px;
 	color: #937c6f;
 	line-height: 0.75;
@@ -1151,7 +1160,7 @@ section
 	position: absolute;
 	left: -50px;
 	top: -32px;
-	font-family: 'Beyond', sans-serif;
+	font-family: 'himBold', sans-serif;
 	font-size: 72px;
 	line-height: 0.75;
 	color: #232323;
@@ -1161,7 +1170,7 @@ section
 	position: absolute;
 	left: -43px;
 	bottom: -28px;
-	font-family: 'Beyond', sans-serif;
+	font-family: 'himBold', sans-serif;
 	font-size: 72px;
 	line-height: 0.75;
 	color: #232323;
@@ -1222,7 +1231,7 @@ section
 }
 .gallery_title ul li a
 {
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 36px;
 	font-weight: 700;
 	color: #FFFFFF;
@@ -1268,7 +1277,7 @@ section
 }
 .test_text
 {
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 24px;
 	color: #8a8a8a;
 	font-style: italic;
@@ -1289,7 +1298,7 @@ section
 }
 .test_name
 {
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 16px;
 	font-weight: 700;
 	color: #232323;
@@ -1429,7 +1438,7 @@ section
 }
 .footer_logo a
 {
-	font-family: 'Lucida', serif;
+	font-family: 'him', serif;
 	font-size: 60px;
 	color: #232323;
 }
@@ -1494,7 +1503,7 @@ section
 {
 	margin-top: 56px;
 	padding-bottom: 13px;
-	font-family: 'Lucida', serif;
+	font-family: 'him';
 	font-size: 12px;
 	color: #232323;
 }
@@ -1516,3 +1525,312 @@ section
 	display:none;
 }
 
+#SServicios{
+	color: #000;
+    background-color: #ffffff;
+    border-color: #ffffff;
+    font-size: 18px;
+}
+
+#iconServicios{
+	color: #1b9de8;
+}
+
+/* TUTORIAL */
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+p {
+    line-height: 1.33em;
+    color: #7E7E7E;
+}
+h1 {
+    color: #EEEEEE;
+}
+
+#loader-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+
+}
+#loader {
+    display: block;
+    position: relative;
+    left: 50%;
+    top: 45%;
+    margin: -45px 0 0 -75px;
+
+    z-index: 1001;
+}
+
+   
+
+    #loader-wrapper .loader-section {
+        position: fixed;
+        top: 0;
+        width: 50%;
+        height: 100%;
+        background: #1b9de8;
+        z-index: 1000;
+        -webkit-transform: translateX(0);  /* Chrome, Opera 15+, Safari 3.1+ */
+        -ms-transform: translateX(0);  /* IE 9 */
+        transform: translateX(0);  /* Firefox 16+, IE 10+, Opera */
+    }
+
+    #loader-wrapper .loader-section.section-left {
+        left: 0;
+    }
+
+    #loader-wrapper .loader-section.section-right {
+        right: 0;
+    }
+
+    /* Loaded */
+    .loaded #loader-wrapper .loader-section.section-left {
+        opacity: 0;
+        -webkit-transition: all 1s ease-out;  
+                transition: all 1s ease-out;
+    }
+
+    .loaded #loader-wrapper .loader-section.section-right {
+        opacity: 0;
+        -webkit-transition: all 1s ease-out;  
+                transition: all 1s ease-out;
+    }
+    
+    .loaded #loader {
+        opacity: 0;
+        -webkit-transition: all 0.8s ease-out;  
+                transition: all 0.8s ease-out;
+    }
+    .loaded #loader-wrapper {
+        visibility: hidden;
+
+        -webkit-transform: translateY(-100%);  /* Chrome, Opera 15+, Safari 3.1+ */
+            -ms-transform: translateY(-100%);  /* IE 9 */
+                transform: translateY(-100%);  /* Firefox 16+, IE 10+, Opera */
+
+        -webkit-transition: all 0.3s 1s ease-out;  
+                transition: all 0.3s 1s ease-out;
+    }
+    
+    /* JavaScript Turned Off */
+    .no-js #loader-wrapper {
+        display: none;
+    }
+    .no-js h1 {
+        color: #222222;
+    }
+/*
+    #content {
+        margin: 0 auto;
+        padding-bottom: 50px;
+        width: 80%;
+        max-width: 978px;
+    }  
+*/
+
+
+
+
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Image replacement
+ */
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+ * Hide from both screenreaders and browsers: h5bp.com/u
+ */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+ * Hide only visually, but have it available for screenreaders: h5bp.com/v
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element to be focusable
+ * when navigated to via the keyboard: h5bp.com/p
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screenreaders, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-o-min-device-pixel-ratio: 5/4),
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+    * {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster: h5bp.com/s */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links for images, or javascript/internal links
+     */
+
+    .ir a:after,
+    a[href^="javascript:"]:after,
+    a[href^="#"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    thead {
+        display: table-header-group; /* h5bp.com/t */
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    @page {
+        margin: 0.5cm;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

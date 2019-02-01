@@ -14,6 +14,7 @@
 <link href="plugins/colorbox/colorbox.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" type="text/css" href="styles/main_styles.css">
 <link rel="stylesheet" type="text/css" href="styles/responsive.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
 
 <link rel="stylesheet" href="css/swiper.min.css">
 
@@ -26,7 +27,7 @@
 
 	<header class="header">
 		<div class="header_inner d-flex flex-row align-items-center justify-content-start">
-			<div class="logo"><a href="#"><img src="img/Logo_O.png" style="width: 15%; height: auto; margin-left: 15px;"> </a></div>
+			<div class="logo"><a href="#"><img src="img/Logo_O.png" style="width: 20%; height: auto; margin-left: 15px;"> </a></div>
 
 
 			<nav class="main_nav">
@@ -83,25 +84,25 @@
 			<div class="burger_container d-flex flex-column align-items-center justify-content-around menu_mm"><div></div><div></div><div></div></div>
 		</div>
 	</header>
+<!--  LOADING-->
+	<div id="loader-wrapper">
+		<div id="loader"><img src="img/Logo_O.png"></div>
+		<div class="loader-section section-left"></div>
+		<div class="loader-section section-right"></div>
+</div>
+
 
 	<!-- Menu -->
 
 	<div class="menu d-flex flex-column align-items-end justify-content-start text-right menu_mm trans_400">
 		<div class="menu_close_container"><div class="menu_close"><div></div><div></div></div></div>
-		<div class="logo menu_mm"><a href="#">Wish</a></div>
-		<div class="search">
-			<form action="#">
-				<input type="search" class="search_input menu_mm" required="required">
-				<button type="submit" id="search_button_menu" class="search_button menu_mm"><img class="menu_mm" src="images/magnifying-glass.svg" alt=""></button>
-			</form>
-		</div>
+		<div class="logo menu_mm"><div class="logo"><a href="#"><img src="img/Logo_1.png" style="width: 60%; height: auto; "> </a></div></div>
 		<nav class="menu_nav">
 			<ul class="menu_mm">
-				<li class="menu_mm"><a href="#">home</a></li>
-				<li class="menu_mm"><a href="#">clothes</a></li>
-				<li class="menu_mm"><a href="#">accessories</a></li>
-				<li class="menu_mm"><a href="#">lingerie</a></li>
-				<li class="menu_mm"><a href="#">contact</a></li>
+				<li class="menu_mm"><a href="#">Alder Gutierrez</a></li>
+				<li class="menu_mm"><a href="#">Ajustes</a></li>
+				<li class="menu_mm"><a href="#">Ayuda</a></li>
+				<li class="menu_mm"><a href="#">Cerrar sesion</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -144,13 +145,13 @@
 		-->
 
 		<!-- Swiper -->
- 		<div class="swiper-container" style="top: 70px;">
+ 		<div class="swiper-container s1" style="top: 70px;">
  		  <div class="swiper-wrapper">
  		    <div class="swiper-slide"><img class="d-block w-100" style=" padding-left: 20px; padding-right: 20px; " src="img/Tarjeta1.png" alt="First slide"></div>
  		    <div class="swiper-slide"><img class="d-block w-100" style=" padding-left: 20px; padding-right: 20px;" src="img/Tarjeta2.png" alt="First slide"></div>
  		  </div>
  		</div>
- 		<!-- END Swiper -->
+ 		<!-- END Swiper 
 <div class="container" style="top: 70px;">
 <input type="button" id="hidecombo" value="hide">
 <input type="button" id="showcombo" value="show" style="display: none;">
@@ -161,9 +162,36 @@
 <input type="button" id="empezar" value="Ventana que se escondera">
 
 </div>
+-->
+<div style="top: 75px; margin-left: 27px;">
+
+<a class="btn btn-primary" id="SServicios" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="padding-left: 10px; padding-right: 125px; padding-top: 10px; padding-bottom: 10px;" >
+  <i id="#iconServicios" class="fas fa-file-invoice-dollar" style="padding-left: 10px; padding-right: 30px;"></i>  Servicios <i class="fas fa-chevron-down"></i>
+  </a>
+
+<div class="collapse" id="collapseExample" style="width: 318px;">
+  <div class="card card-body">
+    <!-- Swiper -->
+  <div class="swiper-container s2" style="height: 110px; width: 260px;">
+    <div class="swiper-wrapper"    style="width: 200px;" >
+      <div class="swiper-slide" style="bottom: 40px;" ><img class="d-block" style=" " src="img/Servicio4.png" alt="First slide"></div>
+      <div class="swiper-slide" style="bottom: 40px;" ><img class="d-block" style=" " src="img/Servicio5.png" alt="First slide"></div>
+      <div class="swiper-slide" style="bottom: 40px;" ><img class="d-block" style=" " src="img/Servicio6.png" alt="First slide"></div>
+      <div class="swiper-slide" style="bottom: 35px;" ><img class="d-block" style=" " src="img/Servicio7.png" alt="First slide"></div>
+      <div class="swiper-slide" style="bottom: 65px;" ><img class="d-block" style=" " src="img/Servicio3.png" alt="First slide"></div>
+    </div>
+
+  </div>
+  </div>
+</div>
+</div>
 
 
+ 
 
+ 
+
+ 
 
 
 	</div>
@@ -180,9 +208,11 @@
   <script src="js/swiper.min.js"></script>
 
   <!-- Initialize Swiper -->
-  <script>
-    var swiper = new Swiper('.swiper-container');
-  </script>
+
+
+
+<script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
+<script src="js/main.js"></script>
 
 
 <script src="js/jquery-3.2.1.min.js"></script>
