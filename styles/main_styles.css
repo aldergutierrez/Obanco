@@ -1530,14 +1530,58 @@ section
     background-color: #ffffff;
     border-color: #ffffff;
     font-size: 18px;
+        padding-bottom: 6px;
+    padding-top: 0px;
 }
 
 #iconServicios{
+	padding-left: 10px; padding-right: 30px; color: #1b9de8;
+	font-size: 22px;
+}
+
+#iconMovimientos{
+
+	padding-right: 15px; 
 	color: #1b9de8;
+	font-size: 24px;
 }
 
 .card-header{
 	background-color: white;
+	padding-bottom: 4px;
+}
+
+.badge-primary{
+	color: #1b9de8;
+	background-color: white;
+	font-family: himBold;
+	font-size: 14px;
+}
+
+.fa-minus-circle{
+	color: #1484c5;
+	background-color: white;
+	font-family: himBold;
+	font-size: 14px;
+}
+.fa-plus-circle{
+	color: #1b9de8;
+	background-color: white;
+	font-family: himBold;
+	font-size: 14px;
+}
+.fa-search{
+
+	margin-left: 88px;
+	color: black;
+	font-size: 20px;
+}
+
+.navbar.fixed-bottom{
+	z-index: 999;
+	padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: white;
 }
 
 /* TUTORIAL */
@@ -1573,7 +1617,7 @@ h1 {
     position: relative;
     left: 50%;
     top: 45%;
-    margin: -45px 0 0 -75px;
+    margin: -45px 0 0 -60px;
 
     z-index: 1001;
 }
