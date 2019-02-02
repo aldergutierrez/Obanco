@@ -25,13 +25,18 @@ $(document).ready(function() {
  var swiper1 = new Swiper('.s1');
 
 
- var swiper2 = new Swiper('.s2', {
-   slidesPerView: 3,
-   spaceBetween: 0,
-   freeMode: true,
-   pagination: {
-     el: '.swiper-pagination',
-     clickable: true,
-   },
- });
 });
+
+var swiper2 = new Swiper('.s2', {
+      slidesPerView: 30,
+      spaceBetween: 5,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });

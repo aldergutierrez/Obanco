@@ -59,6 +59,12 @@
 	font-family: 'him';
 	src: url('../fonts/hinted-Geomanist-Regular.ttf')  format('truetype');
 }
+@font-face
+{
+	font-family: 'himBlack';
+	src: url('../fonts/hinted-Geomanist-Black.ttf')  format('truetype');
+}
+
 /*********************************
 2. Body and some general stuff
 *********************************/
@@ -785,6 +791,7 @@ section
 	-o-transition: all 200ms ease;
 	transition: all 200ms ease;
 }
+
 .menu_nav ul li a:hover
 {
 	color: #0074c5;
@@ -1508,7 +1515,12 @@ section
 	color: #232323;
 }
 
-
+#balanceP{
+	-webkit-transform: translate(40px, -210px);
+    font-size: 30px;
+    font-family: himBlack;
+    color: #2f2f2f;
+}
 
 
 
@@ -1549,6 +1561,7 @@ section
 .card-header{
 	background-color: white;
 	padding-bottom: 4px;
+
 }
 
 .badge-primary{
@@ -1584,6 +1597,26 @@ section
     background-color: white;
 }
 
+.navdownicon
+{
+	font-size: 25px;
+	color: #1b9de8;
+
+}
+.footertwo {
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: red;
+   color: white;
+   text-align: center;
+}
+#nameuser{
+ color: black;
+ margin-bottom: 30px;
+}
+
 /* TUTORIAL */
 .chromeframe {
     margin: 0.2em 0;
@@ -1617,7 +1650,7 @@ h1 {
     position: relative;
     left: 50%;
     top: 45%;
-    margin: -45px 0 0 -60px;
+    margin: -45px 0 0 -50px;
 
     z-index: 1001;
 }
