@@ -41,6 +41,7 @@ var swiper2 = new Swiper('.s2', {
       },
     });
 
+$(document).ready(function() {
 
 
 var me = {};
@@ -71,7 +72,7 @@ function insertChat(who, text, time){
     if (who == "me"){
         control = '<li style="width:100%">' +
                         '<div class="msj macro">' +
-                        '<div class="avatar"><img class="img-circle" style="width:50%;" src="'+ me.avatar +'" /></div>' +
+                        '<div class="avatar"><img class="img-circle" style="width:100%;" src="'+ me.avatar +'" /></div>' +
                             '<div class="text text-l">' +
                                 '<p>'+ text +'</p>' +
                                 '<p><small>'+date+'</small></p>' +
@@ -80,23 +81,23 @@ function insertChat(who, text, time){
                     '</li>';                    
     }else{
         control = '<li style="width:100%;">' +
-                        '<div class="msj-rta macro">' +
+                        '<div class="msj-rta macro" style ="background-color: #1b9de8;">' +
                             '<div class="text text-r">' +
-                                '<p>'+text+'</p>' +
-                                '<p><small>'+date+'</small></p>' +
+                                '<p style ="color: white;">'+text+'</p>' +
+                                '<p style ="color: white;"><small>'+date+'</small></p>' +
                             '</div>' +
-                        '<div class="avatar" style="padding:0px 0px 0px 10px !important"><img class="img-circle" style="width:50%;" src="'+you.avatar+'" /></div>' +                                
+                        '<div class="avatar" style="padding:0px 0px 0px 10px !important"><img class="img-circle" style="width:100%;" src="'+you.avatar+'" /></div>' +                                
                   '</li>';
     }
     setTimeout(
         function(){                        
-            $("ul").append(control).scrollTop($("ul").prop('scrollHeight'));
+            $(".chat").append(control).scrollTop($(".chat").prop('scrollHeight'));
         }, time);
     
 }
 
 function resetChat(){
-    $("ul").empty();
+    $(".chat").empty();
 }
 
 $(".mytext").on("keydown", function(e){
@@ -117,12 +118,16 @@ $('body > div > div > div:nth-child(2) > span').click(function(){
 resetChat();
 
 //-- Print Messages
-insertChat("me", "Hello Tom...", 0);  
-insertChat("you", "Hi, Pablo", 1500);
-insertChat("me", "What would you like to talk about today?", 3500);
-insertChat("you", "Tell me a joke",7000);
-insertChat("me", "Spaceman: Computer! Computer! Do we bring battery?!", 9500);
-insertChat("you", "LOL", 12000);
+insertChat("me", "Hola, Claudia Villalobos, buen dia. En que podemos ayudarte?", 0);  
+insertChat("you", "Hola, buen dia, no encuentro la opcion para dar de alta una tarjeta", 1500);
+insertChat("me", "Claro, te ayudamos", 3500);
+insertChat("you", "Por favor :)",7000);
+insertChat("me", "Presiona el icono de las 3 barritas, que se encuentra en la esquina superior derecha, ahi veras un menu de opciones", 9500);
+insertChat("you", "Listo! ya la encontre, muchas gracias", 12000);
 
 
 //-- NOTE: No use time on insertChat.
+
+
+
+});

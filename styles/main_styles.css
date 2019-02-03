@@ -507,8 +507,8 @@ section
 }
 .avatar img
 {
-	width: 20px;
-	height: 20px;
+	
+	border-radius: 35px;
 }
 
 /*********************************
@@ -1953,7 +1953,7 @@ h1 {
     padding-right:10px;
 }
 .macro{
-    margin-top:5px;width:85%;border-radius:5px;padding:5px;display:flex;
+    margin-top:15px;width:85%;border-radius:5px;padding:5px;display:flex;
 }
 .msj-rta{
     float:right;background:whitesmoke;
@@ -1968,7 +1968,7 @@ h1 {
     
 }
 .frame > div:last-of-type{
-    position:absolute;bottom:0;width:100%;display:flex;
+    position:sticky;bottom:0;width:100%;display:flex;
 }
 body > div > div > div:nth-child(2) > span{
     background: whitesmoke;padding: 10px;font-size: 21px;border-radius: 50%;
@@ -1976,7 +1976,7 @@ body > div > div > div:nth-child(2) > span{
 body > div > div > div.msj-rta.macro{
     margin:auto;margin-left:1%;
 }
-ul {
+ul .chat{
     width:100%;
     list-style-type: none;
     padding:18px;
@@ -2008,50 +2008,3 @@ input:focus{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-.message-candidate {
-  background: rgba(223, 229, 121, 0.9);
-  padding: 40px;
-  max-width: 600px;
-  margin-bottom: 10px;
-}
-
-.message-hiring-manager {
-  background: rgba(0, 167, 204, 0.9);
-  padding: 40px;
-  max-width: 600px;
-  margin-bottom: 10px;
-}
-
-.messaging {
-  max-width: 600px;
-  margin-top: 20px;
-}
-
-.message-text {
-  margin-top: 10px;
-}
-
-.message-photo {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  object-fit: cover;
-  object-position: center center;
-  display: inline-block;
-}
-
-.message-name {
-  margin-left: 10px;
-  display: inline-block;
-}
