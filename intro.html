@@ -30,16 +30,88 @@
 </div>
 
 
+<!-- Modal -->
+<div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title text-center" id="exampleModalLabel">Iniciar</h2>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="text-center">
+      	<img style=" margin-bottom: 30px; height: 385px; " src="img/Step1.png"> 
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" id="signin" style=" width: 50%; margin-bottom: 20px; border-radius: 40px; background-color: #1b9de8; ">Continuar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 2-->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h4 class="modal-title" id="myModalLabel">Escanear Identificacion</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+         <div class="text-center">
+      	<img style=" margin-bottom: 30px; height: 385px; " src="img/Step3.png"> 
+      </div>
+      </div>
+      <div class="text-center">
+        <button type="button" class="btn btn-primary" id="escanear" style=" width: 50%; margin-bottom: 20px; border-radius: 40px; background-color: #1b9de8; ">Escanear</button>
+      </div>
+        </form>
+    </div>
+  </div>
+</div>
+
+<!-- Modal 3-->
+<div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+       
+        <h4 class="modal-title" id="myModalLabel">Reconocimiento Facial</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      
+      <div class="modal-body">
+         <div class="text-center">
+      	<img style=" margin-bottom: 30px; height: 385px; " src="img/Step2.png"> 
+      </div>
+      </div>
+      <div class="text-center">
+        <a href="index.html"><button type="button" class="btn btn-primary" id="reco" style=" width: 50%; margin-bottom: 20px; border-radius: 40px; background-color: #1b9de8; ">reco</button></a>
+      </div>
+        </form>
+    </div>
+  </div>
+</div>
 
 	<!-- Home -->
 
 		<div class="home text-center" style=" background-color: white; ">
 
-			<div class="text-center" style="margin-top: 60px; margin-left: 20px;margin-right: 20px; ">
-			<button type="button" class="btn btn-primary btn-lg btn-block text-center" style="border-radius: 40px;">Entrar</button>
-			<button type="button" class="btn btn-secondary btn-lg btn-block text-center" style="border-radius: 40px;">Registrarse</button>
+			<img style=" margin-top: 80px; height: 285px; " src="img/intro2.png"> 
+
+			<div class="text-center" style="margin-top: 40px;">
+			<button type="button" class="btn btn-primary btn-lg" style="width: 65%; border-radius: 40px; background-color: #4E4E4E;">Entrar</button>
+			<button type="button" class="btn btn-primary btn-lg" style=" border-radius: 50px; background-color: #4E4E4E;"><i class="fas fa-fingerprint"></i></button>
 			</div>
 
+			<button type="button" class="btn btn-secondary btn-lg" style="margin-top: 20px; width: 80%; border-radius: 40px; background-color: #1b9de8; margin-bottom: 50px; " data-toggle="modal" data-target="#myModal1">Registrarse</button>
 
 
 	</div>

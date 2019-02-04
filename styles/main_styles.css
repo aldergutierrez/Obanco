@@ -1618,6 +1618,20 @@ section
  margin-bottom: 30px;
 }
 
+.modal-title{
+	font-family: himBold;
+	
+}
+.modal-dialog{
+	    width: 320px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+
+
+
+
 /* TUTORIAL */
 .chromeframe {
     margin: 0.2em 0;
