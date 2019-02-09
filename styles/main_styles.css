@@ -1539,7 +1539,7 @@ section
 }
 
 #SServicios{
-	color: #000;
+	color: #2f2f2f;
     background-color: #ffffff;
     border-color: #ffffff;
     font-size: 18px;
@@ -1627,9 +1627,15 @@ section
     margin-left: 25px;
     margin-top: 10px;
 }
+h1{
+	color: white;
+	font-family: himBold;
+}
 
-
-
+.form-control{
+	color:#2f2f2f;
+	height: calc(2.25rem + 12px)!important;
+}
 
 
 /* TUTORIAL */
@@ -1646,9 +1652,6 @@ section
 p {
     line-height: 1.33em;
     color: #7E7E7E;
-}
-h1 {
-    color: #EEEEEE;
 }
 
 #loader-wrapper {
