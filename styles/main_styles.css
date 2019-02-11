@@ -2038,6 +2038,24 @@ input:focus{
 
 
 
+/* AYUDA- */
 
 
+.list-group-item.active {
+background-color: #1b9de8;
+}
+
+.list-group-horizontal .list-group-item {
+	margin-bottom: 0;
+	margin-left:-4px;
+	margin-right: 0;
+}
+.list-group-horizontal .list-group-item:first-child {
+	border-top-right-radius:0;
+	border-bottom-left-radius:4px;
+}
+.list-group-horizontal .list-group-item:last-child {
+	border-top-right-radius:4px;
+	border-bottom-left-radius:0;
+}
 
