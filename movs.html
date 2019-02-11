@@ -65,9 +65,126 @@
 
 	<!-- Home -->
 
-		<div class="home">
-			   
-	
+		<div class="home" style="margin-top: 0px; text-align: center!important;">
+			
+			   <canvas id="mycanvas" width="256" height="256" style="margin-top: 70px;"></canvas>
+
+			   <div class="row" style="margin-top: 20px;">
+  <div class="col-4">
+    <div class="list-group" id="list-tab" role="tablist">
+      <a class="list-group-item list-group-item-action active" id="list-home-list" data-toggle="list" href="#list-home" role="tab" aria-controls="home">7D</a>
+      <a class="list-group-item list-group-item-action" id="list-profile-list" data-toggle="list" href="#list-profile" role="tab" aria-controls="profile">1M</a>
+      <a class="list-group-item list-group-item-action" id="list-messages-list" data-toggle="list" href="#list-messages" role="tab" aria-controls="messages">3M</a>
+      <a class="list-group-item list-group-item-action" id="list-settings-list" data-toggle="list" href="#list-settings" role="tab" aria-controls="settings">6M</a>
+    </div>
+  </div>
+  <div class="col-8">
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="list-home" role="tabpanel" aria-labelledby="list-home-list">
+      	      <ul class="list-group list-group-flush">
+			  <li class="list-group-item d-flex justify-content-between align-items-center" style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2" ></i>COMEDOR RAMIREZ <span class="badge badge-primary badge-pill">$300</span></li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>OXXO PALACIO<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>OXXO MARTEL<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>SPAI RECIBIDO<span class="badge badge-primary badge-pill">$899</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center" style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>MINI SUP CARNICERIA <span class="badge badge-primary badge-pill">$300</span></li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>HEB SAN NICOLAS<span class="badge badge-primary badge-pill">$250</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>MC DONALDS MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>UBER EATS MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>RAPPI MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			</ul>
+      </div>
+      <div class="tab-pane fade" id="list-profile" role="tabpanel" aria-labelledby="list-profile-list">
+      	     <ul class="list-group list-group-flush">
+			  <li class="list-group-item d-flex justify-content-between align-items-center" style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER VIP <span class="badge badge-primary badge-pill">$300</span></li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER XL<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>OXXO MARTEL<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>OXXO MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>RAPPI MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>UBER EATS MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>RAPPI MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			</ul>
+
+      </div>
+      <div class="tab-pane fade" id="list-messages" role="tabpanel" aria-labelledby="list-messages-list">
+      	     <ul class="list-group list-group-flush">
+			  <li class="list-group-item d-flex justify-content-between align-items-center" style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i> CINEPOLIS <span class="badge badge-primary badge-pill">$300</span></li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>MINISO<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>OXXO MARTEL<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i> BANORTE RECIBIDO<span class="badge badge-primary badge-pill">$899</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center" style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>MINI SUP CARNICERIA <span class="badge badge-primary badge-pill">$300</span></li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>HEB SAN NICOLAS<span class="badge badge-primary badge-pill">$250</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i> SMART<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>UBER EATS MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>RAPPI MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			</ul>
+      </div>
+      <div class="tab-pane fade" id="list-settings" role="tabpanel" aria-labelledby="list-settings-list">
+      	     <ul class="list-group list-group-flush">
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>MC DONALDS MTY<span class="badge badge-primary badge-pill">$199</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center" style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>COMEDOR RAMIREZ <span class="badge badge-primary badge-pill">$300</span></li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>TAXI PALACIO<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>OXXO MARTEL<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>UBER MTY<span class="badge badge-primary badge-pill">$450</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>SPAI RECIBIDO<span class="badge badge-primary badge-pill">$899</span> </li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center" style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-minus-circle2"></i>MINI SUP CARNICERIA <span class="badge badge-primary badge-pill">$300</span></li>
+			  <li class="list-group-item d-flex justify-content-between align-items-center " style="color: white;
+    background-color: #1b9de8;"><i class="fas fa-plus-circle2"></i>HEB SAN NICOLAS<span class="badge badge-primary badge-pill">$250</span> </li>
+
+
+			</ul>
+      </div>
+    </div>
+  </div>
+</div>
+					
 		</div>
 	<!-- END Home -->
 	
@@ -100,6 +217,8 @@
 <script>window.jQuery || document.write('<script src="js/jquery-3.2.1.min.js"><\/script>')</script>
 <script src="js/main.js"></script>
 
+
+<script type="text/javascript" src="js/Chart.js"></script>
 
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="styles/bootstrap4/popper.js"></script>

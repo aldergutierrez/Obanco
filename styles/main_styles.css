@@ -1584,6 +1584,18 @@ section
 	font-family: himBold;
 	font-size: 14px;
 }
+.fa-minus-circle2{
+	color: white;
+	background-color: #1b9de8;
+	font-family: himBold;
+	font-size: 14px;
+}
+.fa-plus-circle2{
+	color: white;
+	background-color: #1b9de8;
+	font-family: himBold;
+	font-size: 14px;
+}
 .fa-search{
 
 	margin-left: 88px;
@@ -2021,6 +2033,10 @@ input:focus{
 :-moz-placeholder { /* Firefox 18- */
     color: #d4d4d4;
 } 
+
+
+
+
 
 
 

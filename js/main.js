@@ -1,18 +1,3 @@
-/* 
- _____   _           _         _                        _                  
-|_   _| | |         | |       | |                      | |                 
-  | |   | |__   __ _| |_ ___  | |_ ___  _ __ ___   __ _| |_ ___   ___  ___ 
-  | |   | '_ \ / _` | __/ _ \ | __/ _ \| '_ ` _ \ / _` | __/ _ \ / _ \/ __|
- _| |_  | | | | (_| | ||  __/ | || (_) | | | | | | (_| | || (_) |  __/\__ \
- \___/  |_| |_|\__,_|\__\___|  \__\___/|_| |_| |_|\__,_|\__\___/ \___||___/
-
-Oh nice, welcome to the js file of dreams.
-Enjoy responsibly!
-@ihatetomatoes
-
-*/ 
-
-
 //set button id on click to hide first modal
 $("#signin").on( "click", function() {
         $('#myModal1').modal('hide');  
@@ -45,25 +30,18 @@ $(document).ready(function() {
 
 });
 
-var swiper2 = new Swiper('.s2', {
-      slidesPerView: 30,
-      spaceBetween: 5,
-      loop: true,
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+$(document).ready(function() {
+ var swiper2 = new Swiper('.s2');
+
+
+});
+
 
 $(document).ready(function() {
 
 
 var me = {};
-me.avatar = "https://lh6.googleusercontent.com/-lr2nyjhhjXw/AAAAAAAAAAI/AAAAAAAARmE/MdtfUmC0M4s/photo.jpg?sz=48";
+me.avatar = "images/review_2.jpg";
 
 var you = {};
 you.avatar = "images/review_1.jpg";
@@ -149,3 +127,55 @@ insertChat("you", "Listo! ya la encontre, muchas gracias", 12000);
 
 
 });
+
+
+
+
+
+
+
+
+//-- Barra tipo dona
+
+$(document).ready(function(){
+    var ctx = $("#mycanvas").get(0).getContext("2d");
+
+    var data = [
+        {
+            value: 3200,
+            color: "#0075C9",
+            highlight: "lightskyblue",
+            label: "Operaciones"
+        },
+        {
+            value: 6500,
+            color: "#000",
+            highlight: "lightskyblue",
+            label: "Depositos"
+        },
+        {
+            value: 2500,
+            color: "#fff",
+            highlight: "lightskyblue",
+            label: "Retiros"
+        }
+    ];
+
+    var chart = new Chart(ctx).Doughnut(data);
+});
+
+
+
+//Tabla movimientos
+
+$('#myList a').on('click', function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+
+$('#myList a[href="#profile"]').tab('show') // Select tab by name
+$('#myList a:first-child').tab('show') // Select first tab
+$('#myList a:last-child').tab('show') // Select last tab
+$('#myList a:nth-child(3)').tab('show') // Select third tab
+
